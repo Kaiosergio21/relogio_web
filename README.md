@@ -20,7 +20,7 @@ Um relógio digital que usa data e hora para informar o horário, dia mês e ano
 ![relogio](https://github.com/Kaiosergio21/relogio_web/assets/137112682/28e6c6da-0cfd-433f-a9da-2f85e71d3306)
 
 #### Tela do app à tarde.
-![tela da tarde do app](../images/por_do_sol.jpeg)
+![tarde](https://github.com/Kaiosergio21/relogio_web/assets/137112682/a75742c6-c924-42a9-af06-aa0929cdf985)
 
 #### Tela do app à noite.
 ![noite](https://github.com/Kaiosergio21/relogio_web/assets/137112682/af9637eb-d4a1-41dc-a308-56e6dbeeeac1)
