@@ -23,7 +23,7 @@ Um relógio digital que usa data e hora para informar o horário, dia mês e ano
 ![tela da tarde do app](../images/por_do_sol.jpeg)
 
 #### Tela do app à noite.
-![tela da noite do app](../images/lua_cheia.jpg)
+![noite](https://github.com/Kaiosergio21/relogio_web/assets/137112682/af9637eb-d4a1-41dc-a308-56e6dbeeeac1)
 
 ### Tecnologias Utilizadas
 - JavaScript
