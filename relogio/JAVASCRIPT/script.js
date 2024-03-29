@@ -8,10 +8,10 @@ const boa = document.querySelector("#boa"); // Assuming boa is the element where
 const back = document.querySelector("#back"); // Assuming container is the element where you want to change the background
 
 //event
-setInterval(relogio, 1000);
+setInterval(atualizar_relogio);
 
-//função
-function relogio() {
+//funÃ§Ã£o
+function atualizar_relogio ()  {
     let agora = new Date();
     let h = agora.getHours();
     let m = agora.getMinutes();
@@ -20,9 +20,18 @@ function relogio() {
     let mm = agora.getMonth() + 1;
     let yy = agora.getFullYear();
 
-    horas.textContent = h;
-    minutos.textContent = m;
-    segundos.textContent = s;
+    mostrar_horas(h,m,s);
+    mostrar_data(dd,mm,yy);
+    periodo_dia(h);
+
+}
+
+    function mostrar_horas (h,m,s) {
+
+        horas.textContent= h;
+        minutos.textContent = m;
+        segundos.textContent = s;
+
 
     if (h < 10) {
         horas.textContent = "0" + h;
@@ -33,6 +42,10 @@ function relogio() {
     if (s < 10) {
         segundos.textContent = "0" + s;
     }
+
+}
+
+function mostrar_data (dd,mm,yy){
 
     dia.textContent = dd;
     mes.textContent = mm;
@@ -45,9 +58,14 @@ function relogio() {
     if (dd < 10) {
         dd = "0" + dd;
     }
-    if (mm < 10) {
-        mm = "00" + mm;
-    }
+   
+    
+}
+
+  
+function periodo_dia (h){
+    
+
 
     let bom;
     let imageurl;
