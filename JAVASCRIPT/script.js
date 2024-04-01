@@ -9,7 +9,7 @@ const back = document.querySelector("#back");
 //event
 setInterval(atualizar_relogio);
 
-//função
+//funÃ§Ã£o
 function atualizar_relogio ()  {
     let agora = new Date();
     let h = agora.getHours();
@@ -76,7 +76,7 @@ function periodo_dia (h){
     } else if (h >= 12 && h < 18) {
         bom = "boa tarde";
         animationName = "weather2";
-        imageurl = "../images/por_do_sol.jpeg";
+        imageurl = "../images/por_do_sol.jpg";
     } else {
         bom = "boa noite";
         animationName = "weather3";
