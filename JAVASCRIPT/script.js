@@ -80,7 +80,7 @@ function periodo_dia (h){
     } else {
         bom = "boa noite";
         animationName = "weather3";
-        imageurl = "../images/lua_cheia.jpg";
+        imageurl = "../images/lua_cheia.jpeg";
     }
 
     boa.textContent = bom;
