@@ -7,10 +7,10 @@ const ano = document.querySelector("#ano");
 const boa = document.querySelector("#boa");
 const back = document.querySelector("#back");
 
-//event
-setInterval(updateClock);
+// Evento de atualização do relógio a cada segundo
+setInterval(updateClock, 1000);
 
-//função
+// Função para atualizar o relógio
 function updateClock() {
     let agora = new Date();
     let h = agora.getHours();
@@ -20,31 +20,37 @@ function updateClock() {
     let mm = agora.getMonth() + 1;
     let yy = agora.getFullYear();
 
-    // Display hours, minutes, and seconds
+    // Exibição de horas, minutos e segundos
     horas.textContent = (h < 10) ? "0" + h : h;
     minutos.textContent = (m < 10) ? "0" + m : m;
     segundos.textContent = (s < 10) ? "0" + s : s;
 
-    // Display day, month, and year
+    // Exibição de dia, mês e ano
     dia.textContent = (dd < 10) ? "0" + dd : dd;
     mes.textContent = (mm < 10) ? "0" + mm : mm;
     ano.textContent = yy;
 
-    // Determine time of day and update background and message
+    // Determinação do momento do dia e atualização da animação de fundo e da mensagem
     let bom;
-    let imageurl;
+    let momento;
 
     if (h >= 5 && h < 12) {
         bom = "bom dia";
-        imageurl = "../images/sky.jpg";
+        momento = 'weather1';
     } else if (h >= 12 && h < 18) {
         bom = "boa tarde";
-        imageurl = "../images/por_do_sol.jpeg";
+        momento = 'weather2';
     } else {
         bom = "boa noite";
-        imageurl = "../images/lua_cheia.jpg";
+        momento = 'weather3';
     }
 
     boa.textContent = bom;
-    back.style.backgroundImage = "url('" + imageurl + "')";
+    updateBackground(momento);
+}
+
+// Função para atualizar a classe do fundo
+function updateBackground(momento) {
+    back.classList.remove('weather1', 'weather2', 'weather3'); // Remove todas as classes de momento
+    back.classList.add(momento); // Adiciona a classe do momento atual
 }
