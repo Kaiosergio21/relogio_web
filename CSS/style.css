@@ -1,100 +1,56 @@
-#back{
-
- 
-
- background-image: url(../images/sky.jpg);
- background-repeat:no-repeat;
- background-size: 100rem;
-
- background-position: center;
- overflow: hidden;
- animation-name: weather1;
- animation-duration: 5s;
-
- animation-name: weather2;
- animation-duration: 5s;
-
- animation-name: weather3;
- animation-duration: 5s;
- 
-
+#back {
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+  overflow: hidden;
+  animation-fill-mode: forwards;
 }
 
-
-  
-
-@keyframes weather1{
-
-  from{
+/* Define as animações */
+@keyframes weather1 {
+  from {
     background-image: url(../images/lua_cheia.jpg);
-    background-repeat:no-repeat;
-    background-size: 100rem;
-   
-    background-position: center;
-    overflow: hidden;
-
   }
-
-  to{
-     
+  to {
     background-image: url(../images/sky.jpg);
-    background-repeat:no-repeat;
-    background-size: 100rem;
-   
-    background-position: center;
-    overflow: hidden;
-
   }
 }
 
-@keyframes weather2{
-
-  from{
+@keyframes weather2 {
+  from {
     background-image: url(../images/sky.jpg);
-    background-repeat:no-repeat;
-    background-size: 100rem;
-   
-    background-position: center;
-    overflow: hidden;
-
   }
-
-  to{
-     
+  to {
     background-image: url(../images/por_do_sol.jpeg);
-    background-repeat:no-repeat;
-    background-size: 100rem;
-   
-    background-position: center;
-    overflow: hidden;
-
   }
 }
 
-@keyframes weather3{
-
-  from{
+@keyframes weather3 {
+  from {
     background-image: url(../images/por_do_sol.jpeg);
-    background-repeat:no-repeat;
-    background-size: 100rem;
-   
-    background-position: center;
-    overflow: hidden;
-
   }
-
-  to{
-     
+  to {
     background-image: url(../images/lua_cheia.jpg);
-    background-repeat:no-repeat;
-    background-size: 100rem;
-   
-    background-position: center;
-    overflow: hidden;
-
   }
 }
 
+/* Aplica as animações ao #back com diferentes durações ou atrasos */
+#back.weather1 {
+  animation-name: weather1;
+  animation-duration: 5s; /* Duração da primeira animação */
+}
+
+#back.weather2 {
+  animation-name: weather2;
+  animation-duration: 5s; /* Duração da segunda animação */
+  animation-delay: 5s; /* Atraso para começar a segunda animação */
+}
+
+#back.weather3 {
+  animation-name: weather3;
+  animation-duration: 2s; /* Duração da terceira animação */
+  animation-delay: 10s; /* Atraso para começar a terceira animação */
+}
 .logo {
   display: flex;
   justify-content: flex-start;
