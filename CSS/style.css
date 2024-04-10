@@ -1,6 +1,7 @@
 #back {
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
+  height: 100vh;
   background-position: center;
   overflow: hidden;
   animation-fill-mode: forwards;
@@ -261,7 +262,90 @@
 }
 
 
+@media only screen and (max-width: 1000px) {
+  .mensage_container {
+    padding-top: 20rem;
+  }
 
+  .central {
+    padding-left: 0;
+    grid-template-columns: repeat(3,12rem);
+    
+    
+  }
+
+  #git{
+
+    padding-left: 40rem;
+    padding-top: 6rem;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+
+  .mensage_container {
+    padding-top: 20%;
+  }
+
+  .central {
+    padding-right: 50%;
+    grid-template-columns: repeat(3,5rem);
+    
+    
+  }
+
+  .central .caixas{
+     
+      width: 9rem;
+      height: 10rem;
+  }
+
+  .central .texto{
+     
+    font-size:1.7rem ;
+}
+
+  #git{
+
+    padding-left: 70%;
+    padding-bottom: 100%;
+  }
+ 
+}
+
+
+@media only screen and (max-width: 600px) {
+
+  .mensage_container {
+    padding-top: 50%;
+  }
+
+  .central {
+    padding-top: 4rem;
+    padding-right: 50%;
+    grid-template-columns: repeat(3,7rem);
+    
+    
+  }
+
+  .central .caixas{
+     
+      width: 9rem;
+      height: 10rem;
+  }
+
+  .central .texto{
+     
+    font-size:1.7rem ;
+}
+
+  #git{
+
+    padding-left: 70%;
+    padding-bottom: 100%;
+  }
+ 
+}
 
 
 
