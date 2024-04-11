@@ -35,22 +35,16 @@
   }
 }
 
-/* Aplica as animações ao #back com diferentes durações ou atrasos */
 #back.weather1 {
-  animation-name: weather1;
-  animation-duration: 2s; /* Duração da primeira animação */
+  animation: weather1 2s linear forwards; /* Aplica a animação weather1 com duração de 2s */
 }
 
 #back.weather2 {
-  animation-name: weather2;
-  animation-duration: 2s; /* Duração da segunda animação */
-   /* Atraso para começar a segunda animação */
+  animation: weather2 2s linear forwards 2s; /* Aplica a animação weather2 com duração de 2s e atraso de 2s */
 }
 
 #back.weather3 {
-  animation-name: weather3;
-    animation-duration: 2s;; /* Duração da terceira animação */
- /* Atraso para começar a terceira animação */
+  animation: weather3 2s linear forwards 4s; /* Aplica a animação weather3 com duração de 2s e atraso de 4s */
 }
 .logo {
   display: flex;
