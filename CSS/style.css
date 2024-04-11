@@ -38,18 +38,18 @@
 /* Aplica as animações ao #back com diferentes durações ou atrasos */
 #back.weather1 {
   animation-name: weather1;
-  animation-duration: 5s; /* Duração da primeira animação */
+  animation-duration: 2s; /* Duração da primeira animação */
 }
 
 #back.weather2 {
   animation-name: weather2;
-  animation-duration: 5s; /* Duração da segunda animação */
+  animation-duration: 2s; /* Duração da segunda animação */
    /* Atraso para começar a segunda animação */
 }
 
 #back.weather3 {
   animation-name: weather3;
-  ; /* Duração da terceira animação */
+    animation-duration: 2s;; /* Duração da terceira animação */
  /* Atraso para começar a terceira animação */
 }
 .logo {
