@@ -36,15 +36,15 @@
 }
 
 #back.weather1 {
-  animation: weather1 2s linear forwards; /* Aplica a animação weather1 com duração de 2s */
+  animation: weather1 0.5s linear forwards; /* Aplica a animação weather1 com duração de 2s */
 }
 
 #back.weather2 {
-  animation: weather2 2s linear forwards ; /* Aplica a animação weather2 com duração de 2s e atraso de 2s */
+  animation: weather2 0.5s linear forwards ; /* Aplica a animação weather2 com duração de 2s e atraso de 2s */
 }
 
 #back.weather3 {
-  animation: weather3 2s linear forwards ; /* Aplica a animação weather3 com duração de 2s e atraso de 4s */
+  animation: weather3 0.5s linear forwards ; /* Aplica a animação weather3 com duração de 2s e atraso de 4s */
 }
 .logo {
   display: flex;
