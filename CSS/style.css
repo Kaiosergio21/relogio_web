@@ -44,13 +44,13 @@
 #back.weather2 {
   animation-name: weather2;
   animation-duration: 5s; /* Duração da segunda animação */
-  animation-delay: 5s; /* Atraso para começar a segunda animação */
+   /* Atraso para começar a segunda animação */
 }
 
 #back.weather3 {
   animation-name: weather3;
-  animation-duration: 2s; /* Duração da terceira animação */
-  animation-delay: 10s; /* Atraso para começar a terceira animação */
+  ; /* Duração da terceira animação */
+ /* Atraso para começar a terceira animação */
 }
 .logo {
   display: flex;
