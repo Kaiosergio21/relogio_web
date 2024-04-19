@@ -8,13 +8,13 @@
 
 ## Demonstração
 ### Tela do app à manhã.
-![Morning screen of the app.](morning_screenshot.png)
+
 
 ### Tela do app à tarde.
 ![Afternoon screen of the app.](afternoon_screenshot.png)
 
 ### Tela do app à noite.
-![Night screen of the app.](night_screenshot.png)
+![lua_cheia](https://github.com/Kaiosergio21/relogio_web/assets/137112682/af9637eb-d4a1-41dc-a308-56e6dbeeeac1)
 
 ## Tecnologias Utilizadas
 - JavaScript
