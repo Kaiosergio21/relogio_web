@@ -40,5 +40,6 @@ Se deseja contribuir para o projeto, siga estas etapas:
 5. Crie um novo Pull Request.
 
 ## Licença
-[Inserir a licença aqui]
+MIT License
+
 
